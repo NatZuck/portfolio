@@ -1,0 +1,215 @@
+.relative-languages-wrapper {
+  position: relative;
+  z-index: 10000;
+  height: 1px;
+  width: 100%;
+}
+
+.section-languages-wrapper {
+  position: absolute;
+  bottom: 200%;
+  /* transform: translateY(-100%); */
+}
+
+.languages-flex-div {
+  /* display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center; */
+  padding: 10px;
+  width: 100%;
+}
+
+.languages-flex-div {
+  width: 100%;
+  height: 80vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+.languages-flex-div::-webkit-scrollbar {
+  display: none;
+}
+
+.languages-flex-div {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.languages-wrapper {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  scroll-snap-align: start;
+}
+
+.languages-text {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  font-size: 4.5rem;
+  /* width: 100; */
+}
+
+.back-to-top-button {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 3vh;
+  scroll-snap-align: start;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: var(--color-text--bg);
+}
+
+.circle-arrow {
+  transform: scale(2);
+  transform-origin: center;
+  /* background-color: var(--color-text); */
+  color: var(--color-text--bg);
+  transition: transform 400ms ease-in;
+}
+
+.circle-arrow:hover {
+  transform: scale(2.5);
+}
+
+.languages-text {
+  width: 100%;
+  text-align: center;
+}
+
+.languages-comment {
+  display: block;
+  font-family: "Nanum Pen Script", cursive;
+  /* font-family: "Rock Salt", cursive; */
+  /* width: 100%; */
+  font-size: 1.4rem;
+  position: absolute;
+  color: var(--color-comments);
+}
+
+#comment-1 {
+  right: 60px;
+  rotate: 16deg;
+}
+
+#comment-2 {
+  top: 70%;
+  right: 15px;
+  transform: translateX(-50%);
+  rotate: 2deg;
+}
+
+#comment-3 {
+  height: 250px;
+  width: 250px;
+  bottom: 10%;
+  left: 15%;
+  rotate: -5deg;
+  /* animation-iteration-count: calc(2); */
+  /* animation-iteration-count: 0; */
+  animation: rock 0.8s ease 0s 2;
+  animation-play-state: paused;
+}
+
+#comment-3:hover {
+  /* animation-iteration-count: 0; */
+  animation-play-state: running;
+}
+
+@keyframes rock {
+  0% {
+    rotate: -5deg;
+  }
+  25% {
+    rotate: 5deg;
+  }
+  50% {
+    rotate: -5deg;
+  }
+  75% {
+    rotate: 5deg;
+  }
+  100% {
+    rotate: -5deg;
+  }
+}
+
+#comment-4 {
+  right: 9%;
+  top: 40%;
+  rotate: 9.2deg;
+  /* transform: translateX(-50%); */
+}
+#comment-4-bis {
+  text-align: right;
+  bottom: 15%;
+  left: 15%;
+  rotate: -0.76deg;
+  line-height: 1.6rem;
+}
+
+#comment-4-bis > a {
+  font-size: 1.6rem;
+}
+
+.cube-icon {
+  display: inline;
+}
+
+.cube-icon > svg {
+  /* color: #ec6200; */
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+}
+
+#comment-5 {
+  left: 17%;
+  bottom: 25%;
+  rotate: 2.21deg;
+  /* transform: translateX(-50%); */
+}
+
+#comment-6 {
+  right: 17%;
+  bottom: 18%;
+  rotate: -2.21deg;
+  text-align: end;
+}
+
+.rocket-icon-div {
+  margin-left: 6px;
+  display: inline;
+  cursor: default;
+}
+
+.rocket-icon {
+  transform: scale(1);
+  transform-origin: bottom;
+  transition: transform 100ms ease;
+}
+.rocket-icon:hover {
+  cursor: default;
+  /* transform: scale(1.2); */
+}
+
+#comment-7 {
+  bottom: 30%;
+  right: 25%;
+}
+
+#comment-8 {
+  bottom: 25%;
+  left: 22%;
+  rotate: 3.4deg;
+}

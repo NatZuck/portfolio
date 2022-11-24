@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./NZ-logo-no-bg.png" type="image/icon" />
+    <title>Natan Zucchetti | Web design e development</title>
+    <meta
+      name="description"
+      content="Sono Natan Zucchetti, uno sviluppatore web e web designer con sede a Crema, vicino a Milano."
+    />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <script
+      src="https://kit.fontawesome.com/f0469a27dc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="light-theme">
+    <div class="experience">
+      <canvas class="experience-canvas"></canvas>
+    </div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="preloader-wrapper">
+        <div class="loading">
+          <div class="letters">N</div>
+          <div class="letters">Z</div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page" asscroll-container>
+      <div class="toggle-bar">
+        <div class="sun-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+            <path
+              fill="currentColor"
+              d="M11 4V1h2v3Zm0 19v-3h2v3Zm9-10v-2h3v2ZM1 13v-2h3v2Zm17.7-6.3-1.4-1.4 1.75-1.8 1.45 1.45ZM4.95 20.5 3.5 19.05l1.8-1.75 1.4 1.4Zm14.1 0-1.75-1.8 1.4-1.4 1.8 1.75ZM5.3 6.7 3.5 4.95 4.95 3.5 6.7 5.3ZM12 18q-2.5 0-4.25-1.75T6 12q0-2.5 1.75-4.25T12 6q2.5 0 4.25 1.75T18 12q0 2.5-1.75 4.25T12 18Zm0-2q1.675 0 2.838-1.163Q16 13.675 16 12q0-1.675-1.162-2.838Q13.675 8 12 8T9.163 9.162Q8 10.325 8 12t1.163 2.837Q10.325 16 12 16Zm0-4Z"
+            />
+          </svg>
+        </div>
+        <button class="toggle-button">
+          <div class="toggle-circle"></div>
+        </button>
+        <div class="moon-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+            <path
+              fill="currentColor"
+              d="M12 21q-3.75 0-6.375-2.625T3 12q0-3.75 2.625-6.375T12 3q.35 0 .688.025.337.025.662.075-1.025.725-1.637 1.887Q11.1 6.15 11.1 7.5q0 2.25 1.575 3.825Q14.25 12.9 16.5 12.9q1.375 0 2.525-.613 1.15-.612 1.875-1.637.05.325.075.662Q21 11.65 21 12q0 3.75-2.625 6.375T12 21Zm0-2q2.2 0 3.95-1.212 1.75-1.213 2.55-3.163-.5.125-1 .2-.5.075-1 .075-3.075 0-5.238-2.162Q9.1 10.575 9.1 7.5q0-.5.075-1t.2-1q-1.95.8-3.162 2.55Q5 9.8 5 12q0 2.9 2.05 4.95Q9.1 19 12 19Zm-.25-6.75Z"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div class="page-wrapper" asscroll>
+        <section class="hero">
+          <div class="hero-wrapper">
+            <div class="intro-text">Benvenuti sul mio portfolio!</div>
+            <div class="hero-main">
+              <div class="hero-title">
+                <h1>Natan Zucchetti</h1>
+              </div>
+              <div class="hero-description">
+                <p>Web developer | Web Designer</p>
+              </div>
+            </div>
+            <div class="hero-animation"></div>
+
+            <div class="hero-second-main">
+              <div class="hero-second-title">
+                <div class="hero-second-title-text">K.I.S.S...</div>
+              </div>
+              <div class="hero-second-description">
+                Keep It Simple, Sweetie.
+              </div>
+            </div>
+
+            <div class="hero-third-main">
+              <div class="menu-wrapper">
+                <ul class="menu-list">
+                  <li class="menu-item">
+                    <a href="#about-me" class="menu-link">
+                      <div class="link-number">.01</div>
+                      <span class="link-text">About me</span>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#my-work" class="menu-link">
+                      <div class="link-number">.02</div>
+                      <span class="link-text">My work</span>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#my-skills" class="menu-link">
+                      <div class="link-number">.03</div>
+                      <span class="link-text">My skills</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="section-margin first-move"></div>
+
+        <section id="about-me" class="first-section section left">
+          <div class="section-intro-wrapper">
+            <div class="section-number">.01</div>
+            <h1 class="section-title">
+              <div
+                class="section-title-text hidden-left"
+                data-title-text="About me"
+              >
+                About me
+              </div>
+            </h1>
+          </div>
+          <div class="section-detail-wrapper">
+            <h3 class="section-heading hidden-right">Eccomi qua!</h3>
+            <div class="section-text-wrapper">
+              <p class="section-text hidden-left">
+                Sono Natan Zucchetti, come avrai intuito, e sono uno
+                sviluppatore web e web designer nella zona di <b>Crema</b>,
+                vicino a Milano.
+              </p>
+              <p class="section-text hidden-left">
+                Ho molte passioni ed interessi diversi, che sfrutto per offrire
+                il
+                <b>miglior</b> servizio possibile.
+              </p>
+            </div>
+
+            <div class="section-text-wrapper">
+              <h3 class="section-heading hidden-right">La mia missione</h3>
+              <p class="section-text hidden-left">
+                Negli ultimi anni, infatti, ho studiato come full-stack
+                developer, orientandomi principalmente verso il <b>design</b> e
+                lo sviluppo <b>front end</b>, interessandomi anche alla
+                <b>blockchain</b> e all'ottimizzazione della <b>SEO</b>
+                <br />
+              </p>
+              <p class="section-text hidden-left">
+                Il mio obiettivo è ideare e sviluppare siti web moderni e
+                compatibili con ogni dispositivo, che possano coinvolgere
+                l'utente nel <b>tuo prodotto </b>.
+              </p>
+            </div>
+            <div class="section-text-wrapper">
+              <h3 class="section-heading hidden-right">Come contattarmi?</h3>
+              <p class="section-text hidden-left">
+                Non c'è nulla di più semplice: chiamami, scrivimi su Whatsapp,
+                oppure mandami un'email e cominciamo subito a
+                <b>parlare della tua impresa!</b>
+              </p>
+            </div>
+            <div class="contacts">
+              <a href="tel:3703453998" class="phone-number hidden-right">
+                <i class="fa-brands fa-whatsapp"></i> /
+                <i class="fa-solid fa-phone-flip"></i>
+                +39 3703453998
+              </a>
+              <a href="mailto:natan@zafir.it" class="email hidden-left">
+                <i class="fa-regular fa-envelope"></i> natan@zafir.it
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <div class="section-margin second-move"></div>
+
+        <section id="my-work" class="second-section section right">
+          <div class="section-intro-wrapper">
+            <div class="section-number">.02</div>
+            <h1 class="section-title">
+              <div
+                class="section-title-text hidden-right"
+                data-title-text="My work"
+              >
+                My work
+              </div>
+            </h1>
+          </div>
+          <div class="section-detail-wrapper">
+            <h3 class="section-heading hidden-right">
+              Martin Drone Photography
+            </h3>
+            <p class="section-text hidden-right">
+              Ognuno di noi ha qualcosa da <b>offrire</b>. Martin scatta delle
+              favolose foto col drone e perciò mi ha chiesto un sito per
+              mostrare ai possibili <b>clienti</b> le proprie abilità.
+              <br />
+              Da qui è nato il sito della sua attività di drone photography,
+              privo di qualsiasi dettaglio che potrebbe distrarre l'occhio dal
+              <b>lavoro</b> di Martin.
+            </p>
+            <form class="figma-example hidden-right">
+              <label class="figma-example-title">
+                <input
+                  type="checkbox"
+                  class="work-checkbox checkbox"
+                  name=""
+                  id="checkbox-studio"
+                />
+                <div
+                  class="figma-title-div"
+                  data-example-name="Vedi Martin drone photography"
+                ></div>
+                <div class="sample-studio-wrapper">
+                  <div class="figma-iframe">
+                    <iframe
+                      width="100%"
+                      height="100%"
+                      src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F3OLjT0PHabjTeNKLowhoTZ%2FMartin-drone-fotography%3Fnode-id%3D8%253A20%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D8%253A20"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </label>
+            </form>
+
+            <h3 class="section-heading hidden-right">Uno studio esempio</h3>
+            <p class="section-text hidden-right">
+              Questa è la bozza di un design ideato per uno studio
+              <b>professionale</b>; ideato quindi a partire dalla visione
+              desktop, elegante e minimale, per mantenere l'occhio
+              sull'essenziale: i <b>servizi</b>.
+            </p>
+            <form class="figma-example hidden-right">
+              <label class="figma-example-title">
+                <input
+                  type="checkbox"
+                  class="work-checkbox checkbox"
+                  name=""
+                  id="checkbox-studio"
+                />
+                <div
+                  class="figma-title-div"
+                  data-example-name="Vedi studio Esempio"
+                ></div>
+                <div class="sample-studio-wrapper">
+                  <div class="figma-iframe">
+                    <iframe
+                      width="100%"
+                      height="100%"
+                      src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FQPorerM9VOzyZVLg20RWA3%2FEsempio-Commercialista%3Fnode-id%3D1%253A2%26scaling%3Dcontain%26page-id%3D0%253A1"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </label>
+            </form>
+
+            <h3 class="section-heading hidden-right">
+              Intrinsic Value Calculator
+            </h3>
+            <p class="section-text hidden-right">
+              Chiunque abbia mai letto il <b>bilancio</b> di un azienda per
+              decidere se investirci o meno sa quanto può essere complicato
+              trovare i <b>dati</b> e fare i conti necessari.
+            </p>
+            <p class="section-text hidden-right">
+              Perciò, ho creato la mia prima web app in modo che consentisse,
+              inserendo semplicemente il <b>ticker</b> di una azienda quotata,
+              di ottenere i dati finanziari necessari per calcolare il suo
+              <b>valore intrinseco</b>
+              e se desidera, calcolarlo direttamente.
+            </p>
+
+            <div
+              class="intrinsic-value-link hidden-right"
+              data-example-name="Visita Intrinsic value calculator"
+            >
+              <a
+                href="https://natzuck.github.io/IntrinsicValueCalculator/calculator"
+                target="_blank"
+                rel="noopener"
+              >
+                Visita Intrinsic value calculator
+              </a>
+            </div>
+            <div class="intrinsic-value-div hidden-right">
+              <img
+                class="intrinsic-value-img"
+                src="intrinsic-value.png"
+                alt="Project image: intrinsic value calculator"
+              />
+            </div>
+          </div>
+        </section>
+
+        <div class="section-margin third-move"></div>
+
+        <section id="my-skills" class="third-section section central">
+          <div class="section-intro-wrapper">
+            <div class="section-number">.03</div>
+            <h1 class="section-title">
+              <div
+                class="section-title-text hidden-left"
+                data-title-text="My skills"
+              >
+                My skills
+              </div>
+            </h1>
+          </div>
+          <div class="section-skills-wrapper">
+            <div class="skills-flex-div grid-container">
+              <div class="skill-wrapper hidden-left">
+                <div class="skill-text-wrapper">
+                  <span class="bold">Web design </span>
+                  <span>in Figma</span>
+                </div>
+              </div>
+              <div class="skill-wrapper hidden-left">
+                <div class="skill-text-wrapper">
+                  <span class="bold">SEO</span>
+                  <span>and web</span>
+                  <span class="bold">development</span>
+                </div>
+              </div>
+              <div class="skill-wrapper hidden-left">
+                <div class="skill-text-wrapper">
+                  <span class="bold">Smart contracts </span>
+                  <span>development</span>
+                </div>
+              </div>
+              <div class="skill-wrapper hidden-left">
+                <div class="skill-text-wrapper">
+                  <span class="bold">3D</span>
+                  <span>modeling e</span>
+                  <span class="bold">CAD</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="intra-section-div"></div>
+
+          <div class="languages-wrapper">
+            <h1>
+              <div class="languages-section-title hidden-right">Languages</div>
+            </h1>
+
+            <form class="box">
+              <label class="first-label" for="first-checkbox">
+                <input class="checkbox" type="checkbox" id="first-checkbox" />
+                <div
+                  class="box-title frontend-box-title"
+                  data-box-title="Front end"
+                ></div>
+                <div class="first-lists-wrapper lists-wrapper">
+                  <ul class="languages-list">
+                    <li class="language">HTML</li>
+                    <li class="language">CSS</li>
+                    <li class="language">Sass/SCSS</li>
+                    <li class="language">JavaScript</li>
+                  </ul>
+                  <ul class="frameworks-list">
+                    <li class="framework">Bootstrap</li>
+                    <li class="framework">React JS</li>
+                    <li class="framework">Three JS</li>
+                  </ul>
+                </div>
+              </label>
+            </form>
+
+            <form class="box">
+              <label class="first-label" for="second-checkbox">
+                <input class="checkbox" type="checkbox" id="second-checkbox" />
+                <div
+                  class="box-title backend-box-title"
+                  data-box-title="Back end"
+                ></div>
+                <div class="second-lists-wrapper lists-wrapper">
+                  <ul class="languages-list second-languages-list">
+                    <li class="language">Solidity</li>
+                    <li class="language">Python</li>
+                  </ul>
+                  <ul class="frameworks-list">
+                    <li class="framework">Django</li>
+                    <li class="framework">Node JS</li>
+                  </ul>
+                </div>
+              </label>
+            </form>
+          </div>
+
+          <div class="intra-section-div"></div>
+
+          <div class="contact-third-section hidden-left">
+            <label class="contact-button-label" for="contact-checkbox">
+              <div class="contact-button-div" id="contact-button-div">
+                Contattami
+              </div>
+            </label>
+            <input
+              type="checkbox"
+              class="checkbox"
+              name=""
+              id="contact-checkbox"
+            />
+            <div class="phone-section">
+              <a href="tel:3703453998" class="phone-number">
+                <i class="fa-brands fa-whatsapp"></i> /
+                <i class="fa-solid fa-phone-flip"></i>
+                +39 3703453998
+              </a>
+            </div>
+            <div class="email-section">
+              <a href="mailto:natan@zafir.it" class="email">
+                <i class="fa-regular fa-envelope"></i> natan@zafir.it
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="fourth-section credits-section">
+          <div class="credits">
+            Inspired by
+            <a
+              class="credit-link"
+              href="https://twitter.com/bokoko33"
+              target="_blank"
+              rel="noopener"
+            >
+              Bokoko33
+            </a>
+            and
+            <a
+              class="credit-link"
+              href="http://twitter.com/andrewwoan"
+              target="_blank"
+              rel="noopener"
+            >
+              Andrew Woan
+            </a>
+          </div>
+        </section>
+        <div class="scroll-end"></div>
+      </div>
+    </div>
+    <script type="module" defer src="/main.js"></script>
+  </body>
+</html>
