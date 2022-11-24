@@ -309,18 +309,6 @@ export default class Preloader extends EventEmitter {
           },
           "<0.3"
         )
-
-        .to(
-          this.roomChildren.porsche.scale,
-          {
-            x: 1,
-            y: 1,
-            z: 1,
-            ease: "power1.out",
-            duration: this.objectsDuration,
-          },
-          "<0.3"
-        )
         .to(
           this.roomChildren.katana.scale,
           {
