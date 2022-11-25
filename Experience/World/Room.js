@@ -188,7 +188,6 @@ export default class Room {
       }
 
       this.roomChildren[child.name] = child;
-      console.log(child.name);
     });
 
     this.scene.add(this.actualRoom);
