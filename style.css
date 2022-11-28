@@ -69,8 +69,16 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 b {
   color: var(--color-text-bold);
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 /* Experience   ---------------- */
@@ -145,6 +153,14 @@ b {
   font-weight: 500;
   z-index: 1000001;
   margin: 0 0.4rem 1.5rem 0;
+}
+
+.loading-text {
+  display: block;
+  position: absolute;
+  top: 52%;
+  text-align: center;
+  font-size: 0.6rem;
 }
 
 .letters:nth-of-type(2) {
@@ -412,7 +428,7 @@ b {
   font-family: "Font Awesome 5 Free";
   font-weight: 700;
   content: "\f078";
-  margin: 0 0 -1.2rem 50%;
+  margin-bottom: -1.2rem;
   transform: scale(0.75) translateX(-50%);
 }
 
@@ -610,7 +626,7 @@ b {
 
 .section-heading,
 .section-text {
-  line-height: 1.5rem;
+  line-height: 2rem;
   padding: 5px;
 }
 
@@ -748,6 +764,9 @@ b {
 
 /* Work section   ---------------- */
 .figma-iframe {
+  display: flex;
+  align-content: center;
+  justify-content: center;
   transform: scale(1);
   border: none;
   width: 50%;
@@ -758,6 +777,15 @@ b {
 .figma-iframe:hover {
   transform: scale(1.05);
 }
+
+.iframe-text {
+  text-align: center;
+  margin-top: 40%;
+  font-size: 0.75rem;
+  /* width: 100%; */
+  padding: 0.75rem;
+}
+
 .figma-iframe > iframe,
 .intrinsic-value-img {
   border: none;
@@ -986,7 +1014,7 @@ b {
 }
 
 label {
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .box-title {
