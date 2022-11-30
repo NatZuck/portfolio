@@ -125,7 +125,6 @@ b {
 }
 
 /* Preloader  ---------------- */
-
 .preloader {
   width: 100%;
   height: 100vh;
@@ -250,7 +249,6 @@ b {
 }
 
 /* Toggle bar  ---------------- */
-
 .toggle-bar {
   z-index: 100000;
   position: fixed;
@@ -306,7 +304,6 @@ b {
 }
 
 /* Hero   ---------------- */
-
 .hero {
   width: 100vw;
   height: 100vh;
@@ -369,12 +366,6 @@ b {
   opacity: 0.6;
   top: -6px;
   left: -60px;
-
-  /* 
-  top: -250%;
-  left: -60px;
-  */
-
   background-image: url("./kiss.png");
   background-position: center;
   background-size: cover;
@@ -552,10 +543,8 @@ b {
   border: 1px solid var(--color-text);
   background-color: var(--color-details);
   border-radius: 2px;
-  /* top: 4px; */
   transform: translateY(0%);
   animation: wheel-animation 1s ease-in infinite;
-  /* box-shadow: 0.5px -0.5px 0.5px var(--color-text); */
 }
 
 @keyframes wheel-animation {
@@ -570,7 +559,6 @@ b {
 }
 
 /* Section   ---------------- */
-
 .section-margin {
   width: 100%;
   height: var(--section-magin-height);
@@ -763,50 +751,67 @@ b {
 }
 
 /* Work section   ---------------- */
-.figma-iframe {
+
+.separator {
+  height: 4vw;
+  width: 100%;
+}
+
+.desktop-iframe,
+.mobile-iframe,
+.work-iframe {
   display: flex;
   align-content: center;
   justify-content: center;
   transform: scale(1);
   border: none;
-  width: 50%;
+  max-width: 75%;
+  height: auto;
+  margin: auto;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
   transition: all 1s ease-out;
+  border-radius: 0.3rem;
 }
 
-.figma-iframe:hover {
+.work-iframe:hover {
   transform: scale(1.05);
 }
 
 .iframe-text {
   text-align: center;
-  margin-top: 40%;
   font-size: 0.75rem;
-  /* width: 100%; */
-  padding: 0.75rem;
+  padding: 2rem 3rem;
+  line-height: 1.2rem;
 }
 
-.figma-iframe > iframe,
-.intrinsic-value-img {
+.work-iframe > iframe,
+.work-img {
+  margin: auto;
   border: none;
   border-radius: 0.5rem;
 }
 
-.figma-example {
+.work-example {
   width: 100%;
 }
 
-.figma-title-div {
+.work-title-div {
   transform: scale(1);
   transition: transform 1s ease-out;
 }
 
-.intrinsic-value-link:hover {
+.image-link {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.work-link:hover {
   cursor: pointer;
 }
 
-.figma-title-div::before,
-.intrinsic-value-link {
+.work-title-div::before,
+.work-link {
   content: attr(data-example-name);
   display: block;
   width: 100%;
@@ -816,8 +821,8 @@ b {
   font-size: 1.1rem;
 }
 
-.figma-title-div::after,
-.intrinsic-value-link::after {
+.work-title-div::after,
+.work-link::after {
   content: " ";
   display: block;
   height: 0.1rem;
@@ -830,22 +835,22 @@ b {
   transition: all 750ms ease-out;
 }
 
-.figma-title-div:hover {
+.work-title-div:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
 
-.intrinsic-value-link:hover::after,
-.work-checkbox:checked ~ .figma-title-div::after {
+.work-link:hover::after,
+.work-checkbox:checked ~ .work-title-div::after {
   transform: scaleX(0);
 }
 
-.work-checkbox:checked ~ .sample-studio-wrapper {
+.work-checkbox:checked ~ .iframe-wrapper {
   transform: scale(1);
   height: 400px;
 }
 
-.sample-studio-wrapper {
+.iframe-wrapper {
   display: flex;
   width: 100%;
   justify-content: center;
@@ -854,19 +859,19 @@ b {
   transition: all 600ms ease-out;
 }
 
-.intrinsic-value-link:hover {
+.work-link:hover {
   transform: scale(1.1);
 }
 
-.intrinsic-value-div {
+.work-example-div {
   width: 100%;
-  margin-top: 3rem;
+  margin: 3rem 0;
   display: flex;
   justify-content: center;
   align-content: center;
 }
 
-.intrinsic-value-img {
+.work-img {
   max-width: 55%;
   transform: scale(1);
   margin: auto;
@@ -874,7 +879,7 @@ b {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
 }
 
-.intrinsic-value-img:hover {
+.work-img:hover {
   transform: scale(1.1);
 }
 
@@ -1011,10 +1016,6 @@ b {
   max-height: 5rem;
   border-radius: 0.5rem;
   transition: all 1s ease-out;
-}
-
-label {
-  /* cursor: pointer; */
 }
 
 .box-title {
@@ -1164,15 +1165,10 @@ ul {
   left: 50%;
   top: 0%;
   transform: translateX(-50%) scale(1);
-
-  /* padding: 8px; */
   width: fit-content;
-  /* background-color: var(--color-text); */
   border-radius: 2px;
   z-index: 1000;
-  /* transform: scale(1); */
   transition: all 0.5s ease-out;
-
   padding: 2rem;
   font-size: 2rem;
   text-transform: uppercase;
@@ -1319,5 +1315,9 @@ a {
   .hero-third-main {
     top: 15%;
     left: 10%;
+  }
+
+  .separator {
+    height: 6vw;
   }
 }
