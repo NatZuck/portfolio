@@ -81,6 +81,10 @@ b {
   text-decoration: underline;
 }
 
+.centered-text {
+  text-align: center;
+}
+
 /* Experience   ---------------- */
 .experience {
   position: fixed;
